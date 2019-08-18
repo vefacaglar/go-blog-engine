@@ -31,15 +31,14 @@
     <div class="widget widget-category">		
         <h3 class="widget-title">Category</h3>		
         <ul>
+
+         {{range .categories}}
+
             <li>
-                <a href="#">Web Design</a>
+                <a href="#">{{.Name}}</a>
             </li>
-            <li>
-                <a href="#">Web Development</a>
-            </li>
-            <li>
-                <a href="#">SEO</a>
-            </li>
+
+            {{end}}
         </ul>
     </div>
 </aside>
